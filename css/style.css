@@ -1,0 +1,482 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    height: 5000px;
+
+}
+
+.flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.justify-space{
+    justify-content: space-between;
+
+}
+.justify-center{
+    justify-content: center;
+}
+.item-center{
+    align-items: center;
+}
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media (min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+header.topbar{
+    background-color:#2c3e50 ;
+    color: white;
+}
+header.topbar .auth > div a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+header.topbar .container .icons a{
+    margin-right: 5px;
+}
+header.topbar .container{
+    padding: 10px 0;
+}
+header.topbar .container .auth span{
+    margin:0 10px;
+}
+header.topbar .container .auth > div img{
+    margin-right: 4px;
+}
+nav.top .container .phone h5,nav.top .container .time h5{
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+nav.top .container .phone h6,nav.top .container .time h6{
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+nav.top .container .phone img,nav.top .container .time img{
+    margin-right: 12px;
+}
+nav.top{
+    padding: 20px 0;
+}
+nav .navbar .container a{
+    color: #2c3e50;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 13px 19px;
+    transition: all 0.4s ease;
+}
+nav .navbar .container a.active{
+    background-color: #EEBF00;
+    color: white;
+}
+nav .navbar .container a:hover{
+    background-color: #EEBF00;
+    color: white;
+}
+.magic-shadow{
+    position: relative;
+    background-color: #fff;
+}
+.magic-shadow::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 69px;
+    display: block;
+    bottom: -20px;
+    background-image: url(../icons/shadow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+.magic-shadow-sm{
+    position: relative;
+    background-color: #FEFEFE;
+}
+.magic-shadow-sm::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 69px;
+    display: block;
+    bottom: -22px;
+    background-image: url(../icons/shadow-sm.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.btn{
+    padding:10px 15px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+
+}
+.btn-yellow{
+   background-color: #EEBF00; 
+   color: white;
+}
+.btn-yellow:hover{
+    background-color: white; 
+    color: #EEBF00;
+    border: 1px solid #EEBF00;
+}
+.btn-dark{
+    background-color: #2c3e50; 
+    color: white;
+    
+}
+.btn-dark:hover{
+    background-color: white; 
+    color: #2c3e50;
+    border: 1px solid #2c3e50;
+}
+header.hero{
+    background-position: 0 0;
+    height: 600px;
+    background-image: url(../images/hero.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+header.hero .container button:first-child{
+    margin-right: 0.50rem;
+}
+header.hero .container .welcome span{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-right: 12px;
+}
+header.hero .container .welcome{
+    margin-bottom: 2px;
+}
+header.hero .container h1{
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+header.hero .container h1 span{
+    color: #EEBF00;
+}
+header.hero .container p{
+    width: 50%;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 1.1rem;
+}
+header.hero .container .hero-image{
+    position: absolute;
+    top: -40px;
+    right: 40px;
+}
+header.hero .container{
+    position: relative;
+}
+section.top-product{
+    background-color: #F0F0F0;
+
+}
+.section-heading{
+    text-align: center;
+    position: relative;
+    margin-bottom: 4rem;
+    padding-top: 4rem;
+}
+.section-heading::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-image: url(../icons/hr.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -40px;
+}
+
+section.top-product .food-card{
+    background-color: #fff;
+    border-radius: 4px;
+    padding:2rem 0;
+    width: 30%;
+    margin-bottom: 6rem;
+}
+.meal-warp.flex.justify-space.item-center {
+	margin-bottom: 5rem;
+}
+section.top-product .food-card .product-image img{
+    width: 80%;
+    height: 200px;
+    object-fit: contain;
+    padding-bottom: 1rem;
+}
+section.top-product .food-card .stars img{
+    margin-right: 2px;
+}
+hr{
+    border: 1px solid #f0f0f0;
+    opacity: 0.8;
+    margin: 1rem 0;
+}
+.text-center{
+    text-align: center;
+}
+section.top-product .food-card h2{
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+section.top-product .food-card .price{
+    font-weight: 300px;
+    color: red;
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+section.top-product .food-card button{
+    padding:5px 3px;
+    background-color: #fff;
+    border: 2px solid #EEBF00;
+    border-radius: 4px;
+    color: #2D333F;
+    width: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    margin-top: 20px;
+}
+section.top-product .food-card button img{
+    background-color:#EEBF00;
+    height: 32px;
+    padding: 0.50rem;
+    margin-right: 1.2rem;
+}
+section.top-product .food-card button:hover{
+    background-color: #EEBF00;
+    color: #fff;
+}
+section.about-meal .container .meal-warp img{
+    width: 85%;
+}
+section.about-meal .container .meal-warp h2{
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0 0 2rem 0;
+    font-size: 1.4rem;
+    line-height: 1.3;
+}
+section.about-meal .container .meal-warp p{
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+section.our-card{
+    background-color: #F0F0F0;
+}
+section.our-card .container .our-wapper{
+    padding-top: 4rem;
+    margin-right: -2rem;
+    height: 500px;
+    margin-top: 5rem;
+}
+section.our-card .container .our-wapper .first-card{
+    background-color: #FEFEFE;
+    text-align: center;
+    position: relative;
+    padding:4rem;
+    margin-right: 2rem;
+    height: 350px;
+
+
+}
+section.our-card .container .our-wapper .first-card h2{
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+section.our-card .container .our-wapper .first-card p{
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+section.our-card .container .our-wapper .first-card .icon{
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 3rem;
+}
+.yellow-heading{
+    color: #EEBF00;
+}
+section.timer{
+    background-image: linear-gradient(
+        rgba(35,49,56,0.9),
+        rgba(35,49,56,0.9)
+        ), url(../images/food-table.jpg);
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+}
+section.timer .container .time{
+    margin-right: -2rem;
+    margin-top: 6rem;
+}
+section.timer .container .time div{
+    margin-right: 2rem;
+    background-color: #EEBF00;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0;
+}
+section.timer .container .time div span:first-child{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 800;
+}
+section.timer .container .time div span:last-child{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+.heading-white{
+    color: white;
+}
+section.blog{
+    background-color: #F0F0F0;
+}
+section.blog .container .blog-wrapper .left-blog img{
+    width: 100%;
+    margin-bottom: -2px;
+}
+section.blog .container .blog-wrapper{
+    margin-right: -2rem;
+}
+section.blog .container .blog-wrapper {
+    margin-right: 2rem;
+    margin-right: -3rem;
+    height: 100vh;
+}
+section.blog .container .blog-wrapper .blog-contant{
+    background-color: #fff;
+    padding: 1.7rem;
+}
+section.blog .container .blog-wrapper .blog-contant .post-meta div span:last-child{
+    margin-left: 2rem;
+}
+section.blog .container .blog-wrapper .blog-contant .post-meta div span strong{
+    font-weight: 800;
+}
+section.blog .container .blog-wrapper .blog-contant .post-meta div span:first-child{
+    margin-right: 0.50rem;
+}
+section.blog .container .blog-wrapper .blog-contant .post-meta{
+    margin-bottom: 1.2rem;
+}
+section.blog .container .blog-wrapper .blog-contant h2{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+section.blog .container .blog-wrapper .blog-contant p{
+    line-height: 1.7;
+}
+section.blog .container .blog-wrapper .left-blog {
+    margin-right: 3rem;
+}
+section.blog .container{
+    position: relative;
+}
+section.blog .container button{
+    margin-bottom: 5rem;
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    padding: 0.75rem 2rem;
+}
+section .container .sub-image img{
+    width: 90%;
+}
+
+section .container .sub-contant-wrapper h2{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+section .container .sub-contant-wrapper p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+section .container .sub-contant-wrapper .input-wrapper{
+    background-color: white;
+    display: flex;
+    padding: 0.3rem;
+    border-radius: 4px;
+}
+section .container .sub-contant-wrapper .input-wrapper input{
+    width: 100%;
+    border: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+section .container .sub-contant-wrapper .input-wrapper input:focus{
+    outline: none;
+}
+section.subscribe{
+    padding-top: 4rem;
+    background-color: #EEBF00;
+}
+section .container .sub-contant-wrapper .input-wrapper button{
+    padding: 0.8rem 2rem;
+    border: none;
+    background-color: #EEBF00;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+section .container .sub-contant-wrapper .input-wrapper button:hover{
+    background-color: #2D333F;
+    color: white;
+    cursor: pointer;
+}
